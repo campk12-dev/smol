@@ -3,7 +3,7 @@ const router = express.Router();
 const validUrl = require('valid-url');
 const shortid = require('shortid');
 const globalUrls = require('../config/default.js');
-const mongoose = require('mongoose');
+
 
 const Url = require('../models/Url.js');
 // @route POST /api/url/shorten

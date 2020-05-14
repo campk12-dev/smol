@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>smol.cf &mdash; Shorten Links</title>
+  <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="header header--bg">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#">smol.cf</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="#links-from-db">DATABASE</a></li>
+              <li><a href="#team">ABOUT</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__content text-center">
+          <h6 class="header__content__title slide-in-left">SHORTEN YOUR LINKS</h6>
+          <p class="header__content__paragraph">A small, fast and lightweight NodeJS based Link Shortening Tool that will help you reach your Destination URL faster!</p>
+
+          <div class="subscribe-section">
+            <input type="text" class="longUrlText form-control" size="50" placeholder="Enter Long URL" required>
+            <button class="shorten-btn button contact-two__button button--hover slide-in-right">Shorten</button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+
+    <section>
+      <div class="container text-center">
+        <div id="new-link" class="alert alert-info" role="alert" style="display:none;">
+
+        </div>
+      </div>
+    </section>
+
+    <section id="links-from-db">
+      <div class="container text-center">
+        <h3>Recently Shortened </h3>
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+      <div class="container">
+        <section id="team" class="team">
+          <div class="page-section text-center">
+            <h2 class="page-section__title">CREATED BY</h2>
+            <p class="page-section__paragraph"></p>
+            <div class="row gutters-50">
+
+              <div class="col-md-6 col-lg-3">
+                <div class="thumbnail">
+                  <a href="assets/images/td.jpg" target="_blank">
+                    <img src="assets/images/td.jpg" alt="">
+                    <div class="caption team__caption">
+                      <h4 class="team__name">Kapil P Deshmukh</h4>
+                      <p class="team__title">Web Dev | Teacher | Chef</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="thumbnail">
+                  <a href="assets/images/td.jpg" target="_blank">
+                    <div class="caption team__caption">
+                      <h4 class="team__name">René Descartes</h4>
+                      <p class="team__title">
+It is not enough to have a good mind; the main thing is to use it well.<br>
+The reading of all good books is like a conversation with the finest minds of past centuries.<br>
+Divide each difficulty into as many parts as is feasible and necessary to resolve it.<br>
+Perfect numbers like perfect men are very rare.<br>
+If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things.<br>
+In order to improve the mind, we ought less to learn, than to contemplate.<br>
+Except our own thoughts, there is nothing absolutely in our power.<br>
+Everything is self-evident.<br>
+When it is not in our power to follow what is true, we ought to follow what is most probable.<br>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+           
+      <section class="contact-two contact-two--bg">
+        <div class="container">
+          <div class="page-section text-center">
+            <h2 class="contact-two__title">That's all folks! I would love to hear from you...</h2>
+            <a class="button contact-two__button button--hover" href="mailto:chefwithguns@gmail.com">CONTACT ME</a>
+          </div>
+        </div>
+      </section>
+      
+
+      
+      <footer class="footer footer--bg">
+        <div class="container">
+          <div class="page-section">
+            
+            <hr class="footer__horizontal-bar">
+            <p class="footer__bottom-paragraph">&copy; Copyright <script>document.write(new Date().getFullYear())</script> <a target="_blank" href="https://instagram.com/nazi_pikachu" style="color: #00aafe;font-weight:bold;">Kapil Deshmukh</a>. All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+  </div>
+    
+    
+  
+
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="client.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      var $videoSrc = $("#video").attr("src");
+
+      $('#myModal').on('hide.bs.modal', function (e) {
+        $("#video").attr('src',$videoSrc); 
+      });
+
+
+
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+

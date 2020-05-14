@@ -1,11 +1,14 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path');
+
 
 const Url = require('../models/Url.js');
 
-router.get("/entry/home",(req,res)=>{
-    res.send("Welcome to Home Page!");
+router.get("/",(req,res)=>{
+    res.sendFile(path.join(__dirname,'../client','index.html'));
 })
+
 
 router.get('/:code',async (req,res)=>{
     try{
